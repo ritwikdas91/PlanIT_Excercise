@@ -1,0 +1,20 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 91.949 s <<< FAILURE! - in TestSuite
+Tests.Plaint_work.UI_Test1  Time elapsed: 4.126 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+
+Tests.Plaint_work.UI_Test3  Time elapsed: 4.256 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+
+Tests.Plaint_work.UI_Test1  Time elapsed: 3.883 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+
+Tests.Plaint_work.UI_Test3  Time elapsed: 6.391 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+
