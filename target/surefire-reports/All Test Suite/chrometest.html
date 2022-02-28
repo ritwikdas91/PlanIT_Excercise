@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>chrometest</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>4/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Feb 28 14:34:04 AEDT 2022</td>
+<td>Started on:</td><td>Mon Feb 28 18:13:38 AEDT 2022</td>
 </tr>
-<tr><td>Total time:</td><td>43 seconds (43718 ms)</td>
+<tr><td>Total time:</td><td>28 seconds (28744 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,12 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Tests.Plaint_work.UI_Test1()'><b>UI_Test1</b><br>Test class: Tests.Plaint_work</td>
+<td title='Tests.Plaint_work.UI_Test3()'><b>UI_Test3</b><br>Test class: Tests.Plaint_work</td>
 <td><div><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:60)
-	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+	at POM.LoginPage.navigatetoShoppingPage(LoginPage.java:86)
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -96,12 +96,58 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1464765911", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1464765911'><pre>java.lang.AssertionError: null
+</pre></div><a href='#' onClick='toggleBox("stack-trace1109357691", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1109357691'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:60)
-	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+	at POM.LoginPage.navigatetoShoppingPage(LoginPage.java:86)
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div></td>
+<td>0</td>
+<td>Tests.Plaint_work@44828f6b</td></tr>
+<tr>
+<td title='Tests.Plaint_work.UI_Test2()'><b>UI_Test2</b><br>Test class: Tests.Plaint_work</td>
+<td><div><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at POM.ContactPage.submitWithMandatory(ContactPage.java:91)
+	at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+</pre></div><a href='#' onClick='toggleBox("stack-trace21688431", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace21688431'><pre>java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at POM.ContactPage.submitWithMandatory(ContactPage.java:91)
+	at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -119,14 +165,14 @@ function toggleAllBoxes() {
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
 <td>4</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
+<td>Tests.Plaint_work@44828f6b</td></tr>
 <tr>
-<td title='Tests.Plaint_work.UI_Test3()'><b>UI_Test3</b><br>Test class: Tests.Plaint_work</td>
+<td title='Tests.Plaint_work.UI_Test1()'><b>UI_Test1</b><br>Test class: Tests.Plaint_work</td>
 <td><div><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.CartPage.verifyCartData(CartPage.java:53)
-	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:61)
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,12 +188,12 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
-</pre></div><a href='#' onClick='toggleBox("stack-trace491335138", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace491335138'><pre>java.lang.AssertionError: null
+</pre></div><a href='#' onClick='toggleBox("stack-trace1942350290", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1942350290'><pre>java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.CartPage.verifyCartData(CartPage.java:53)
-	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:61)
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -164,8 +210,8 @@ function toggleAllBoxes() {
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
 	at java.base/java.lang.Thread.run(Thread.java:833)
 </pre></div></td>
-<td>33</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
+<td>4</td>
+<td>Tests.Plaint_work@44828f6b</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -178,27 +224,22 @@ function toggleAllBoxes() {
 <td title='Tests.Plaint_work.UI_Test2()'><b>UI_Test2</b><br>Test class: Tests.Plaint_work</td>
 <td></td>
 <td>11</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
+<td>Tests.Plaint_work@44828f6b</td></tr>
 <tr>
 <td title='Tests.Plaint_work.UI_Test2()'><b>UI_Test2</b><br>Test class: Tests.Plaint_work</td>
 <td></td>
-<td>7</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
+<td>1</td>
+<td>Tests.Plaint_work@44828f6b</td></tr>
 <tr>
 <td title='Tests.Plaint_work.UI_Test2()'><b>UI_Test2</b><br>Test class: Tests.Plaint_work</td>
 <td></td>
-<td>5</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
+<td>6</td>
+<td>Tests.Plaint_work@44828f6b</td></tr>
 <tr>
 <td title='Tests.Plaint_work.UI_Test2()'><b>UI_Test2</b><br>Test class: Tests.Plaint_work</td>
 <td></td>
-<td>2</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
-<tr>
-<td title='Tests.Plaint_work.UI_Test2()'><b>UI_Test2</b><br>Test class: Tests.Plaint_work</td>
-<td></td>
-<td>15</td>
-<td>Tests.Plaint_work@3e34ace1</td></tr>
+<td>3</td>
+<td>Tests.Plaint_work@44828f6b</td></tr>
 </table><p>
 </body>
 </html>

@@ -18,7 +18,7 @@ public class CartPage extends UserActions {
 
     @FindBy(xpath = "/html/body/div[2]/div/form/table/tbody/tr")
     private List<WebElement> resultTable;
-    @FindBy(xpath = "/html/body/div[2]/div/form/table/tfoot/tr[1]/td/strong")
+    @FindBy(xpath = "/html/body/div[2]/div/form/table/tfoot/tr[1]")
     private WebElement totalValue;
 
     public CartPage(){
@@ -45,7 +45,7 @@ public class CartPage extends UserActions {
                 }
 
             }
-
+            waitForElement(totalValue);
             System.out.println(totalValue.getText().substring(7));
             Assert.assertEquals(Float.parseFloat(totalValue.getText().substring(7)), total);
 

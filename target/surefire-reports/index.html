@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 6 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">14 methods, 4 failed,   10 passed</span>
+                    <span class="method-stats">14 methods, 6 failed,   8 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -110,6 +110,16 @@
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Plaint_work" class="method navigator-link" hash-for-method="UI_Test1">UI_Test1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Plaint_work" class="method navigator-link" hash-for-method="UI_Test2">UI_Test2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Plaint_work" class="method navigator-link" hash-for-method="UI_Test2">UI_Test2</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -131,16 +141,6 @@
                       <a href="#" panel-name="suite-All_Test_Suite" class="show-methods passed suite-All_Test_Suite"> (show)</a> <!-- show-methods passed suite-All_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-All_Test_Suite">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Plaint_work" class="method navigator-link" hash-for-method="UI_Test2">UI_Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Plaint_work" class="method navigator-link" hash-for-method="UI_Test2">UI_Test2</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-All_Test_Suite" title="Tests.Plaint_work" class="method navigator-link" hash-for-method="UI_Test2">UI_Test2</a> <!-- method navigator-link -->
@@ -207,8 +207,8 @@
                   <div class="stack-trace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:60)
-	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:61)
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -236,8 +236,66 @@
                   <div class="stack-trace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:60)
-	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+	at POM.ContactPage.submitWithoutMandatory(ContactPage.java:61)
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UI_Test2">
+                  </a> <!-- UI_Test2 -->
+                  <span class="method-name">UI_Test2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at POM.ContactPage.submitWithMandatory(ContactPage.java:91)
+	at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UI_Test2">
+                  </a> <!-- UI_Test2 -->
+                  <span class="method-name">UI_Test2</span>
+                  <div class="stack-trace">java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.fail(Assert.java:115)
+	at POM.ContactPage.submitWithMandatory(ContactPage.java:91)
+	at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -265,8 +323,8 @@
                   <div class="stack-trace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.CartPage.verifyCartData(CartPage.java:53)
-	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+	at POM.LoginPage.navigatetoShoppingPage(LoginPage.java:86)
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -294,8 +352,8 @@
                   <div class="stack-trace">java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:110)
 	at org.testng.Assert.fail(Assert.java:115)
-	at POM.CartPage.verifyCartData(CartPage.java:53)
-	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+	at POM.LoginPage.navigatetoShoppingPage(LoginPage.java:86)
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -379,20 +437,6 @@
                   <span class="method-name">UI_Test2</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UI_Test2">
-                  </a> <!-- UI_Test2 -->
-                  <span class="method-name">UI_Test2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="UI_Test2">
-                  </a> <!-- UI_Test2 -->
-                  <span class="method-name">UI_Test2</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-All_Test_Suite-class-passed -->
         </div> <!-- panel All_Test_Suite -->
@@ -404,29 +448,17 @@
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite thread-count=&quot;10&quot; parallel=&quot;methods&quot; name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
-  &lt;test thread-count=&quot;10&quot; parallel=&quot;methods&quot; name=&quot;chrometest&quot; verbose=&quot;2&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;All Test Suite&quot; guice-stage=&quot;DEVELOPMENT&quot; allow-return-values=&quot;true&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;chrometest&quot; verbose=&quot;2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Plaint_work&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;UI_Test1&quot;/&gt;
-          &lt;include name=&quot;UI_Test2&quot;/&gt;
-          &lt;include name=&quot;UI_Test3&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.Plaint_work --&gt;
+      &lt;class name=&quot;Tests.Plaint_work&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- chrometest --&gt;
-  &lt;test thread-count=&quot;10&quot; parallel=&quot;methods&quot; name=&quot;edgetest&quot; verbose=&quot;2&quot;&gt;
+  &lt;test thread-count=&quot;2&quot; parallel=&quot;methods&quot; name=&quot;edgetest&quot; verbose=&quot;2&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;edge&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;Tests.Plaint_work&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;UI_Test1&quot;/&gt;
-          &lt;include name=&quot;UI_Test2&quot;/&gt;
-          &lt;include name=&quot;UI_Test3&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- Tests.Plaint_work --&gt;
+      &lt;class name=&quot;Tests.Plaint_work&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- edgetest --&gt;
 &lt;/suite&gt; &lt;!-- All Test Suite --&gt;
@@ -471,66 +503,66 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'UI_Test3')
+data.setCell(0, 1, 'UI_Test2')
 data.setCell(0, 2, 'Tests.Plaint_work')
-data.setCell(0, 3, 33748);
+data.setCell(0, 3, 14647);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'UI_Test3')
+data.setCell(1, 1, 'UI_Test2')
 data.setCell(1, 2, 'Tests.Plaint_work')
-data.setCell(1, 3, 33577);
+data.setCell(1, 3, 11434);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'UI_Test2')
 data.setCell(2, 2, 'Tests.Plaint_work')
-data.setCell(2, 3, 18491);
+data.setCell(2, 3, 11014);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'UI_Test2')
 data.setCell(3, 2, 'Tests.Plaint_work')
-data.setCell(3, 3, 15082);
+data.setCell(3, 3, 6254);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'UI_Test2')
 data.setCell(4, 2, 'Tests.Plaint_work')
-data.setCell(4, 3, 13326);
+data.setCell(4, 3, 4859);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'UI_Test2')
 data.setCell(5, 2, 'Tests.Plaint_work')
-data.setCell(5, 3, 11790);
+data.setCell(5, 3, 4193);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'UI_Test2')
+data.setCell(6, 1, 'UI_Test1')
 data.setCell(6, 2, 'Tests.Plaint_work')
-data.setCell(6, 3, 7195);
+data.setCell(6, 3, 4047);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'UI_Test2')
 data.setCell(7, 2, 'Tests.Plaint_work')
-data.setCell(7, 3, 6166);
+data.setCell(7, 3, 3952);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'UI_Test2')
+data.setCell(8, 1, 'UI_Test1')
 data.setCell(8, 2, 'Tests.Plaint_work')
-data.setCell(8, 3, 5647);
+data.setCell(8, 3, 3795);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'UI_Test2')
 data.setCell(9, 2, 'Tests.Plaint_work')
-data.setCell(9, 3, 5138);
+data.setCell(9, 3, 3159);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'UI_Test1')
+data.setCell(10, 1, 'UI_Test2')
 data.setCell(10, 2, 'Tests.Plaint_work')
-data.setCell(10, 3, 4077);
+data.setCell(10, 3, 2332);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'UI_Test1')
+data.setCell(11, 1, 'UI_Test2')
 data.setCell(11, 2, 'Tests.Plaint_work')
-data.setCell(11, 3, 3896);
+data.setCell(11, 3, 1721);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'UI_Test2')
+data.setCell(12, 1, 'UI_Test3')
 data.setCell(12, 2, 'Tests.Plaint_work')
-data.setCell(12, 3, 2072);
+data.setCell(12, 3, 287);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'UI_Test2')
+data.setCell(13, 1, 'UI_Test3')
 data.setCell(13, 2, 'Tests.Plaint_work')
-data.setCell(13, 3, 2035);
+data.setCell(13, 3, 210);
 window.suiteTableData['All_Test_Suite']= { tableData: data, tableDiv: 'times-div-All_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-All_Test_Suite">
               </div> <!-- times-div-All_Test_Suite -->
             </div> <!-- times-div -->
@@ -564,78 +596,82 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">UI_Test2</span>
+                <span class="method-start">1756 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">UI_Test1</span>
-                <span class="method-start">2281 ms</span>
+                <span class="method-start">1756 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">UI_Test3</span>
-                <span class="method-start">2281 ms</span>
+                <span class="method-start">5869 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">2281 ms</span>
+                <span class="method-start">5962 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">17366 ms</span>
+                <span class="method-start">7685 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">22505 ms</span>
+                <span class="method-start">10846 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">24579 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">UI_Test2</span>
-                <span class="method-start">31775 ms</span>
+                <span class="method-start">22289 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43566 ms</span>
+                <span class="method-start">28544 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class before">
                 <span class="method-name">setup(edge)</span>
-                <span class="method-start">43744 ms</span>
+                <span class="method-start">28794 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
+                <span class="method-name">UI_Test2</span>
+                <span class="method-start">31842 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">UI_Test1</span>
-                <span class="method-start">45036 ms</span>
+                <span class="method-start">31843 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">UI_Test3</span>
-                <span class="method-start">45039 ms</span>
+                <span class="method-start">35641 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">45044 ms</span>
+                <span class="method-start">35796 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">58372 ms</span>
+                <span class="method-start">40656 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">64021 ms</span>
+                <span class="method-start">51671 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">UI_Test2</span>
-                <span class="method-start">70189 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">UI_Test2</span>
-                <span class="method-start">72226 ms</span>
+                <span class="method-start">66320 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">90718 ms</span>
+                <span class="method-start">68655 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

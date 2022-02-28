@@ -1,20 +1,28 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 14, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 91.949 s <<< FAILURE! - in TestSuite
-Tests.Plaint_work.UI_Test1  Time elapsed: 4.126 s  <<< FAILURE!
+Tests run: 14, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 69.988 s <<< FAILURE! - in TestSuite
+Tests.Plaint_work.UI_Test1  Time elapsed: 4.106 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
 
-Tests.Plaint_work.UI_Test3  Time elapsed: 4.256 s  <<< FAILURE!
+Tests.Plaint_work.UI_Test2  Time elapsed: 0.096 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+	at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
 
-Tests.Plaint_work.UI_Test1  Time elapsed: 3.883 s  <<< FAILURE!
+Tests.Plaint_work.UI_Test3  Time elapsed: 0.113 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 
-Tests.Plaint_work.UI_Test3  Time elapsed: 6.391 s  <<< FAILURE!
+Tests.Plaint_work.UI_Test1  Time elapsed: 3.755 s  <<< FAILURE!
 java.lang.AssertionError: null
-	at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+	at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
+
+Tests.Plaint_work.UI_Test2  Time elapsed: 0.154 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
+
+Tests.Plaint_work.UI_Test3  Time elapsed: 0.136 s  <<< FAILURE!
+java.lang.AssertionError: null
+	at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 

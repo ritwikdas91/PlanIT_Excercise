@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="10" failed="4" skipped="0">
+<testng-results ignored="0" total="14" passed="8" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-02-28T14:34:04 AEDT" name="All Test Suite" finished-at="2022-02-28T14:35:35 AEDT" duration-ms="91106">
+  <suite started-at="2022-02-28T18:13:38 AEDT" name="All Test Suite" finished-at="2022-02-28T18:14:48 AEDT" duration-ms="69163">
     <groups>
     </groups>
-    <test started-at="2022-02-28T14:34:04 AEDT" name="chrometest" finished-at="2022-02-28T14:34:48 AEDT" duration-ms="43718">
+    <test started-at="2022-02-28T18:13:38 AEDT" name="chrometest" finished-at="2022-02-28T18:14:07 AEDT" duration-ms="28744">
       <class name="Tests.Plaint_work">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:04 AEDT" name="setup" finished-at="2022-02-28T14:34:06 AEDT" duration-ms="2275" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:38 AEDT" name="setup" finished-at="2022-02-28T18:13:40 AEDT" duration-ms="1749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,7 +18,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="UI_Test1()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:06 AEDT" name="UI_Test1" finished-at="2022-02-28T14:34:10 AEDT" duration-ms="4077" status="FAIL">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:40 AEDT" name="UI_Test2" finished-at="2022-02-28T18:13:44 AEDT" duration-ms="4193" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -27,8 +27,40 @@
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.fail(Assert.java:115)
-at POM.ContactPage.submitWithoutMandatory(ContactPage.java:60)
-at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+at POM.ContactPage.submitWithMandatory(ContactPage.java:91)
+at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UI_Test2 -->
+        <test-method signature="UI_Test1()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:40 AEDT" name="UI_Test1" finished-at="2022-02-28T18:13:44 AEDT" duration-ms="4047" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at POM.ContactPage.submitWithoutMandatory(ContactPage.java:61)
+at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -50,7 +82,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test1 -->
-        <test-method signature="UI_Test3()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:06 AEDT" name="UI_Test3" finished-at="2022-02-28T14:34:40 AEDT" duration-ms="33748" status="FAIL">
+        <test-method signature="UI_Test3()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:44 AEDT" name="UI_Test3" finished-at="2022-02-28T18:13:45 AEDT" duration-ms="210" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -59,8 +91,8 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.fail(Assert.java:115)
-at POM.CartPage.verifyCartData(CartPage.java:53)
-at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+at POM.LoginPage.navigatetoShoppingPage(LoginPage.java:86)
+at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,35 +114,31 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test3 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:06 AEDT" name="UI_Test2" finished-at="2022-02-28T14:34:21 AEDT" duration-ms="15082" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:44 AEDT" name="UI_Test2" finished-at="2022-02-28T18:13:46 AEDT" duration-ms="1721" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:21 AEDT" name="UI_Test2" finished-at="2022-02-28T14:34:27 AEDT" duration-ms="5138" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:46 AEDT" name="UI_Test2" finished-at="2022-02-28T18:13:49 AEDT" duration-ms="3159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:27 AEDT" name="UI_Test2" finished-at="2022-02-28T14:34:29 AEDT" duration-ms="2072" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:13:49 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:01 AEDT" duration-ms="11434" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:29 AEDT" name="UI_Test2" finished-at="2022-02-28T14:34:36 AEDT" duration-ms="7195" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:14:01 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:07 AEDT" duration-ms="6254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:36 AEDT" name="UI_Test2" finished-at="2022-02-28T14:34:48 AEDT" duration-ms="11790" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UI_Test2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Plaint_work@3e34ace1]" started-at="2022-02-28T14:34:48 AEDT" name="tearDown" finished-at="2022-02-28T14:34:48 AEDT" duration-ms="136" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Plaint_work@44828f6b]" started-at="2022-02-28T18:14:07 AEDT" name="tearDown" finished-at="2022-02-28T18:14:07 AEDT" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- Tests.Plaint_work -->
     </test> <!-- chrometest -->
-    <test started-at="2022-02-28T14:34:48 AEDT" name="edgetest" finished-at="2022-02-28T14:35:35 AEDT" duration-ms="47348">
+    <test started-at="2022-02-28T18:14:07 AEDT" name="edgetest" finished-at="2022-02-28T18:14:48 AEDT" duration-ms="40356">
       <class name="Tests.Plaint_work">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:34:48 AEDT" name="setup" finished-at="2022-02-28T14:34:49 AEDT" duration-ms="1292" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:07 AEDT" name="setup" finished-at="2022-02-28T18:14:10 AEDT" duration-ms="3046" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +149,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="UI_Test1()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:34:49 AEDT" name="UI_Test1" finished-at="2022-02-28T14:34:53 AEDT" duration-ms="3896" status="FAIL">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:10 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:14 AEDT" duration-ms="3952" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -130,8 +158,40 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.fail(Assert.java:115)
-at POM.ContactPage.submitWithoutMandatory(ContactPage.java:60)
-at Tests.Plaint_work.UI_Test1(Plaint_work.java:23)
+at POM.ContactPage.submitWithMandatory(ContactPage.java:91)
+at Tests.Plaint_work.UI_Test2(Plaint_work.java:38)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:135)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:673)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:220)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:945)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:193)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:833)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- UI_Test2 -->
+        <test-method signature="UI_Test1()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:10 AEDT" name="UI_Test1" finished-at="2022-02-28T18:14:14 AEDT" duration-ms="3795" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+at org.testng.Assert.fail(Assert.java:110)
+at org.testng.Assert.fail(Assert.java:115)
+at POM.ContactPage.submitWithoutMandatory(ContactPage.java:61)
+at Tests.Plaint_work.UI_Test1(Plaint_work.java:25)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -153,7 +213,7 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test1 -->
-        <test-method signature="UI_Test3()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:34:49 AEDT" name="UI_Test3" finished-at="2022-02-28T14:35:23 AEDT" duration-ms="33577" status="FAIL">
+        <test-method signature="UI_Test3()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:14 AEDT" name="UI_Test3" finished-at="2022-02-28T18:14:14 AEDT" duration-ms="287" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[null]]>
@@ -162,8 +222,8 @@ at java.base/java.lang.Thread.run(Thread.java:833)
               <![CDATA[java.lang.AssertionError: null
 at org.testng.Assert.fail(Assert.java:110)
 at org.testng.Assert.fail(Assert.java:115)
-at POM.CartPage.verifyCartData(CartPage.java:53)
-at Tests.Plaint_work.UI_Test3(Plaint_work.java:65)
+at POM.LoginPage.navigatetoShoppingPage(LoginPage.java:86)
+at Tests.Plaint_work.UI_Test3(Plaint_work.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -185,27 +245,23 @@ at java.base/java.lang.Thread.run(Thread.java:833)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test3 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:34:49 AEDT" name="UI_Test2" finished-at="2022-02-28T14:35:02 AEDT" duration-ms="13326" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:14 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:19 AEDT" duration-ms="4859" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:35:02 AEDT" name="UI_Test2" finished-at="2022-02-28T14:35:08 AEDT" duration-ms="5647" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:19 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:30 AEDT" duration-ms="11014" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:35:08 AEDT" name="UI_Test2" finished-at="2022-02-28T14:35:14 AEDT" duration-ms="6166" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:30 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:45 AEDT" duration-ms="14647" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:35:14 AEDT" name="UI_Test2" finished-at="2022-02-28T14:35:16 AEDT" duration-ms="2035" status="PASS">
+        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:45 AEDT" name="UI_Test2" finished-at="2022-02-28T18:14:47 AEDT" duration-ms="2332" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- UI_Test2 -->
-        <test-method signature="UI_Test2()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:35:16 AEDT" name="UI_Test2" finished-at="2022-02-28T14:35:35 AEDT" duration-ms="18491" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- UI_Test2 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Plaint_work@74cadd41]" started-at="2022-02-28T14:35:35 AEDT" name="tearDown" finished-at="2022-02-28T14:35:35 AEDT" duration-ms="372" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:Tests.Plaint_work@2692b61e]" started-at="2022-02-28T18:14:47 AEDT" name="tearDown" finished-at="2022-02-28T18:14:48 AEDT" duration-ms="493" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

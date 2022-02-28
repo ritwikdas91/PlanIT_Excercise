@@ -7,6 +7,8 @@ import POM.LoginPage;
 import POM.shopPage;
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 import reporting.ExtentReports.ExtentTestManager;
 
@@ -68,4 +70,8 @@ public class Plaint_work extends UserActions {
 
     }
 
-}
+
+
+    }
+
+

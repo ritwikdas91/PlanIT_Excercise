@@ -1,28 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="All Test Suite" parallel="true" thread-count="10">
-    <test verbose="2" preserve-order="true" name="chrometest" parallel = "methods">
+<suite name="All Test Suite" parallel="false" thread-count="5" allow-return-values="true">
+    <test verbose="2" preserve-order="true" name="chrometest">
         <parameter name = "browser" value="chrome"/>
         <classes>
-            <class name="Tests.Plaint_work">
-                <methods>
-                    <include name="UI_Test1"/>
-<!--                    <include name="UI_Test2"/>-->
-<!--                    <include name="UI_Test3"/>-->
-                </methods>
-            </class>
+            <class name="Tests.Plaint_work"/>
+
         </classes>
     </test>
     <test verbose="2" preserve-order="true" name="edgetest">
         <parameter name = "browser" value="edge"/>
         <classes>
-            <class name="Tests.Plaint_work">
-                <methods>
-                    <include name="UI_Test1"/>
-<!--                    <include name="UI_Test2"/>-->
-<!--                    <include name="UI_Test3"/>-->
-                </methods>
-            </class>
+            <class name="Tests.Plaint_work"/>
+<!--            </class>-->
         </classes>
     </test>
 </suite>

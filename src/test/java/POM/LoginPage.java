@@ -57,13 +57,14 @@ public class LoginPage extends UserActions {
         try {
 
             navigate("http://jupiter.cloud.planittesting.com");
+            waitForElement(startShopping);
             click(jupiterContactPage);
             waitForElement(submitButton);
 
         }catch (Exception e){
 
             log.error(e.getMessage());
-//            Assert.fail();
+            Assert.fail();
         }
 
 
@@ -75,13 +76,14 @@ public class LoginPage extends UserActions {
         try {
 
             navigate("http://jupiter.cloud.planittesting.com");
+            waitForElement(startShopping);
             click(startShopping);
             waitForElement(productList);
 
         }catch (Exception e){
 
             log.error(e.getMessage());
-//            Assert.fail();
+            Assert.fail();
         }
 
 

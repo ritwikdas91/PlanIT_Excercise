@@ -57,6 +57,7 @@ public class ContactPage extends UserActions {
         }catch (Exception e){
 
             log.error(e.getMessage());
+            System.out.println(e.getMessage());
             Assert.fail();
 
         }
@@ -86,6 +87,7 @@ public class ContactPage extends UserActions {
         }catch (Exception e){
 
             log.error(e.getMessage());
+            System.out.println(e.getMessage());
             Assert.fail();
         }
 
